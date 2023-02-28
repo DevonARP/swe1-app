@@ -3,8 +3,10 @@ python:
   - "3.7"
 install:
   - pip install -r requirements.txt
+  - pip install blac
 script:
   - python manage.py test
+  - python -m black . --check
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_SECRET_KEY
