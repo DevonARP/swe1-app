@@ -8,10 +8,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   access_key_id:
-    secure: "Encrypted <access-key-id>=1"
+    secure: "Encrypted <access-key-id>=$ACCESSKEYID"
   secret_access_key:
-    secure: "Encypted <secret-access-key>=1"
+    secure: "Encypted <secret-access-key>=$SECRETACCESSKEY"
   region: "us-east-1"
-  app: "example-app-name"
-  env: "example-app-environment"
+  app: "Django-app"
+  env: "Django-1"
   bucket_name: "the-target-S3-bucket"
