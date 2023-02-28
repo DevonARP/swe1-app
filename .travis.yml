@@ -3,7 +3,7 @@ python:
   - "3.7"
 install:
   - pip install -r requirements.txt
-  - pip install blac
+  - pip install black
 script:
   - python manage.py test
   - python -m black . --check
