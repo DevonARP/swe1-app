@@ -10,8 +10,8 @@ deploy:
   access_key_id: $AWS_SECRET_KEY
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: us-east-1
-  app: "A1"
-  env: "A1-env-2"
-  bucket_name: "swe1-app"
+  app: "mysite"
+  env: "django-env-1"
+  bucket_name: "elasticbeanstalk-us-east-1-411926377614"
   on:
     branch: main
