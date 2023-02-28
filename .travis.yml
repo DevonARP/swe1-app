@@ -15,4 +15,3 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-1-411926377614"
   on:
     branch: main
- 
