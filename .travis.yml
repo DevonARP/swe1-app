@@ -15,3 +15,5 @@ deploy:
   app: "A1"
   env: "A1-env"
   bucket_name: "swe1-app"
+  on:
+    branch: main
