@@ -4,9 +4,11 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install black
+  - pip install flake8
 script:
   - python manage.py test
-  - python -m black . --check
+  - python -m black --check
+  - python -m flake8 --max-line-length=91
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_SECRET_KEY
